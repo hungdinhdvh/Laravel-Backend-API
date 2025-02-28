@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "e24e57c6-4a72-4f5f-a7b9-5e855e67faf4",
+		"name": "VietStock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42365436"
+	},
+	"item": [
+		{
+			"name": "I - 1. https://vietstock.vn/_Partials/NewsNewUpdatePaging",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"item\":15,\"row\":1}"
+				},
+				"url": {
+					"raw": "https://vietstock.vn/_Partials/NewsNewUpdatePaging",
+					"protocol": "https",
+					"host": [
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"_Partials",
+						"NewsNewUpdatePaging"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "I - 2. https://finance.vietstock.vn/data/reportdatabydisplay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "type=true&__RequestVerificationToken=hGfWG4LE8eXkW4jyy24ck-OM7ncVmQVN-mTcKuxNSnYA3y9EFPOyFCbE5QAtR0U3BQ4ahvI7TfTCQ124CrtzlvED5O68FgAq56M_ajofSOU1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/reportdatabydisplay",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"reportdatabydisplay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "I - 3. https://finance.vietstock.vn/data/getdatabynormid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "normID=233&__RequestVerificationToken=FlJYEcyZa8OLStfreEueXwMT31d_2A2DLbxAvLM7jUx2LLUUmTawidlEpWv9g_bYc-EQumtJ1IXbLCBwaCn4tROsHpybrUSGNcAlUOJCvic1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/getdatabynormid",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"getdatabynormid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "II - 1. https://finance.vietstock.vn/data/KQGDThongKeGiaPaging",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "page=1&pageSize=30&catID=1&date=2025-02-16&__RequestVerificationToken=FlJYEcyZa8OLStfreEueXwMT31d_2A2DLbxAvLM7jUx2LLUUmTawidlEpWv9g_bYc-EQumtJ1IXbLCBwaCn4tROsHpybrUSGNcAlUOJCvic1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/KQGDThongKeGiaPaging",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"KQGDThongKeGiaPaging"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "II - 2. https://finance.vietstock.vn/data/sectionindex",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "type=1&__RequestVerificationToken=FlJYEcyZa8OLStfreEueXwMT31d_2A2DLbxAvLM7jUx2LLUUmTawidlEpWv9g_bYc-EQumtJ1IXbLCBwaCn4tROsHpybrUSGNcAlUOJCvic1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/sectionindex",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"sectionindex"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "III - 1. https://finance.vietstock.vn/data/allkqkdorder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "catID=0&industryID=0&code=&order=&__RequestVerificationToken=FlJYEcyZa8OLStfreEueXwMT31d_2A2DLbxAvLM7jUx2LLUUmTawidlEpWv9g_bYc-EQumtJ1IXbLCBwaCn4tROsHpybrUSGNcAlUOJCvic1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/allkqkdorder",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"allkqkdorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "III - 2. https://finance.vietstock.vn/data/eventstransferdata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "transferTypeID=0&stockCode=&fDate=2023-08-14&tDate=2023-10-14&page=2&pageSize=30&orderBy=EventID&orderDir=DESC&__RequestVerificationToken=FlJYEcyZa8OLStfreEueXwMT31d_2A2DLbxAvLM7jUx2LLUUmTawidlEpWv9g_bYc-EQumtJ1IXbLCBwaCn4tROsHpybrUSGNcAlUOJCvic1"
+				},
+				"url": {
+					"raw": "https://finance.vietstock.vn/data/eventstransferdata",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"data",
+						"eventstransferdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Search-Stock  https://finance.vietstock.vn/search-stock?query=AAA&page=1&pageSize=10&skip=0&searchType=all&languageId=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "__RequestVerificationToken=itgcdMQgkBrwE23iTQaHSqsHtp3oy7mZJtkaJhP_MB9yPkbWA1HrEPVYSyki9vmPjjlCz4n4TlitXwVpPMw-Sze8jP77B7Iqueof9kyzWA41;",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finance.vietstock.vn/search-stock?query=AAA&page=1&pageSize=10&skip=0&searchType=all&languageId=2",
+					"protocol": "https",
+					"host": [
+						"finance",
+						"vietstock",
+						"vn"
+					],
+					"path": [
+						"search-stock"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "AAA"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "searchType",
+							"value": "all"
+						},
+						{
+							"key": "languageId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

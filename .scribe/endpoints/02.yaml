@@ -1,0 +1,117 @@
+name: 'Telegram Notifications'
+description: |-
+
+  APIs for sending Telegram notifications
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/telegram/send
+    metadata:
+      groupName: 'Telegram Notifications'
+      groupDescription: |-
+
+        APIs for sending Telegram notifications
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Send Trading Signal'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {ACCESS_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      symbol:
+        name: symbol
+        description: 'Mã cổ phiếu.'
+        required: true
+        example: AAA
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      entry_price:
+        name: entry_price
+        description: 'Giá mua vào (VNĐ).'
+        required: true
+        example: '8680'
+        type: numeric
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      take_profit:
+        name: take_profit
+        description: 'Giá chốt lời (VNĐ).'
+        required: true
+        example: '8845'
+        type: numeric
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      stop_loss:
+        name: stop_loss
+        description: 'Giá cắt lỗ (VNĐ).'
+        required: true
+        example: '8570'
+        type: numeric
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      volume:
+        name: volume
+        description: 'Khối lượng giao dịch (cổ phiếu).'
+        required: true
+        example: '1803000'
+        type: numeric
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      duration:
+        name: duration
+        description: 'Thời gian kỳ vọng (phiên).'
+        required: true
+        example: '3 - 5'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      symbol: AAA
+      entry_price: '8680'
+      take_profit: '8845'
+      stop_loss: '8570'
+      volume: '1803000'
+      duration: '3 - 5'
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+            "message": "Notification sent successfully",
+            "preview": "🔥 MUA cổ phiếu AAA giá 8,680 VNĐ\n🎯 Take Profit: 8,845 VNĐ (+1.9%)\n🛑 Stop-loss: 8,570 VNĐ (-1.3%)\n📊 Khối lượng giao dịch: 1,803,000 cổ phiếu\n💰 Tổng giá trị giao dịch: 15,713,000,000 VNĐ\n⏳ Thời gian kỳ vọng: 3 - 5 phiên giao dịch"
+          }
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer odskfdsdofgfdkj'
+    controller: null
+    method: null
+    route: null
+    custom: []
